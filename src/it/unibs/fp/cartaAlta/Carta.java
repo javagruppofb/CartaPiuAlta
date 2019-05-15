@@ -46,6 +46,7 @@ public class Carta {
 		return nome;
 	}
 //uu
+	//baglio coglione
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
