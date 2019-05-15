@@ -45,7 +45,7 @@ public class Carta {
 	public String getNome() {
 		return nome;
 	}
-
+//uu
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
