@@ -9,7 +9,7 @@ public class Gioatore {
 	private int patrimonio;
 
 	public boolean puoGiocare() {
-		return patrimonio > PATRIMONIO_MINIMO;
+		return patrimonio >= PATRIMONIO_MINIMO;
 	}
 
 	public boolean punta(int puntata) {
@@ -22,6 +22,17 @@ public class Gioatore {
 
 	public void accredita(int accredito) {
 		patrimonio += accredito;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuffer daStampare = new StringBuffer("\n"); 
+		daStampare.append(nome);
+		if(puoGiocare())
+			daStampare.append(" ha " + patrimonio);
+		else
+			daStampare.append(" ha finito i soldi");
+		return daStampare.toString();
 	}
 	
 	public String getNome() {
